@@ -29,4 +29,4 @@ This App  allows the store manager to monitor the products that are sold by the 
 - [Attendant to make a sale order](https://irenyak1.github.io/Store-Manager/UI/make_a_sale_record.html)
 
 
-[The App user interface can be found here](https://github.com/Irenyak1/Store-Manager/tree/develop/UI)
+[The App user interface can be found here](https://irenyak1.github.io/Store-Manager/UI/index.html)
