@@ -15,10 +15,10 @@ This App  allows the store manager to monitor the products that are sold by the 
 
 ##  List of UI pages
        
-- [Index page] (https://irenyak1.github.io/Store-Manager/UI/index.html)
+- [Index page](https://irenyak1.github.io/Store-Manager/UI/index.html)
 - [Admin login page](https://irenyak1.github.io/Store-Manager/UI/signin_admin.html)
-- [Admin profile page] (https://irenyak1.github.io/Store-Manager/UI/admin_page.html)
-- [Products page] (https://irenyak1.github.io/Store-Manager/UI/available_products.html)
+- [Admin profile page](https://irenyak1.github.io/Store-Manager/UI/admin_page.html)
+- [Products page](https://irenyak1.github.io/Store-Manager/UI/available_products.html)
 - [List of attendants page](https://irenyak1.github.io/Store-Manager/UI/list_of_attendants.html)
 - [Admin to view list of sales page](https://irenyak1.github.io/Store-Manager/UI/view_sales_admin.html)
 - [Admin to create product page](https://irenyak1.github.io/Store-Manager/UI/create_product.html)
