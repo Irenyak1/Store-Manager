@@ -7,13 +7,42 @@
   <meta name="keywords" content="HTML,CSS">
   <meta name="author" content="Irene Nyakate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='assets/css/admin_page.css'>
   <link rel='stylesheet' type='text/css' href='assets/css/signin.css'>
 </head>
 
 <body>
+    <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="Products.html" class="dropbtn">Products</a>
+          <div class="dropdown-content">
+            <a href="products.html">Available products</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Attendants</a>
+          <div class="dropdown-content">
+              <a href="signup.html">Signup attendant</a>
+            <a href="list_of_attendants.html">View store attendants</a>
+          </div>
+        </li>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Sales</a>
+          <div class="dropdown-content">
+            <a href="view_sales_admin.html">View Sales</a>
+          </div>
+        </li>
+      </ul>
   <form id="signup" method="post" action="#">
     <div class="container">
       <h1>Sign Up</h1>
+      <div class="imgcontainer">
+        <img src="assets/images/stored.jpg" alt="Our store">
+      </div>
       <p>Please fill in this form to create a new account.</p>
       <table>
         <tbody>
@@ -85,7 +114,7 @@
 
       <div class="clearfix">
         <button type="button" class="cancelbtn">
-          <a href="signup.html">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="signup.html">Cancel</button>
         <button type="submit" class="signupbtn">
           <a href="index.html">Signup</button>
       </div>

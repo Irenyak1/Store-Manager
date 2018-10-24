@@ -1,5 +1,5 @@
 body {font-family: Arial, Helvetica, sans-serif;
-background-color:#D2691E}
+background-color:rgba(196, 207, 202, 0.836);}
 * {box-sizing: border-box}
 form {border: 1px solid #ccc;
 	  text-align: center;}
@@ -8,7 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 li {
@@ -54,6 +54,3 @@ li.dropdown {
     display: block;
 }
 
-.container { 
-	background:blue;
-}

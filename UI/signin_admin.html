@@ -15,42 +15,40 @@
 </head>
 
 <body>
-  <h2>Signin Page</h2>
   <form id="signin_admin" method="post" action="admin_page.html">
-    <div class="imgcontainer">
-      <img src="assets/images/stored.jpg" alt="Our store">
-    </div>
-
-    <div class="container admin">
-      <label for="usname">
-        <b>Username:</b>
-      </label>&nbsp
-      <input type="text" placeholder="Enter Your Username" name="usname" value="admin" required="required" />
-      <br>
-      <label for="passw">
-        <b>Password:</b>
-      </label>&nbsp
-      <input type="password" placeholder="Enter Your Password" name="passw" value="Irene" required="required" />
-      <br>
-
-      <button type="submit" class="signinbtn">
-        <a href="admin_page.html">Admin Signin</a>
-      </button>
-      <label>
-        <input type="checkbox" name="remember"> Remember
-      </label>
-    </div>
     <div class="container">
-      <button type="button" class="cancelbtn">
-        <a href="index.html">Cancel</button>
-      <span class="passw">Forgot your password?
-        <a href="#"></a>
-      </span>
+      <h1>Signin Page</h1>
+      <div class="imgcontainer">
+        <img src="assets/images/stored.jpg" alt="Our store">
+      </div>
+
+      <div class="container admin">
+        <label for="usname">
+          <b>Username:</b>
+        </label>&nbsp
+        <input type="text" placeholder="admin" name="usname" required="required" />
+        <br>
+        <label for="passw">
+          <b>Password:</b>
+        </label>&nbsp
+        <input type="password" placeholder="admin" name="passw" required="required" />
+        <br>
+
+        <button type="submit" class="signinbtn">
+          <a href="admin_page.html">Admin Signin</a>
+        </button>
+        <label>
+          <input type="checkbox" name="remember"> Remember
+        </label>
+      </div>
+      <div class="container">
+        <button type="button" class="cancelbtn">
+          <a href="index.html">Cancel</button>
+        <span class="passw">Forgot your password?
+          <a href="#"></a>
+        </span>
+      </div>
     </div>
-    <p> Please if you would like to create an account,hit that button below.</p>
-    <button type="submit" class="signupbtn">
-      <a href="signup.html">Signup</a>
-    </button>
   </form>
 </body>
 
