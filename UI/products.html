@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Andela Challenge one">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Irene Nyakate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='assets/css/admin_page.css'>
+    <link rel='stylesheet' type='text/css' href="assets/css/view_products.css">
+    <script src="assets/js/js_file.js"></script>
+</head>
+
+<body>
+        <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <a href="Products.html" class="dropbtn">Products</a>
+                  <div class="dropdown-content">
+                    <a href="products.html">Available products</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Attendants</a>
+                  <div class="dropdown-content">
+                      <a href="signup.html">Signup attendant</a>
+                    <a href="list_of_attendants.html">View store attendants</a>
+                  </div>
+                </li>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Sales</a>
+                  <div class="dropdown-content">
+                    <a href="view_sales_admin.html">View Sales</a>
+                  </div>
+                </li>
+              </ul>
+    <h2> All products</h2>
+
+    <table id="myTable">
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity available(pieces)</th>
+            <th>Minimum amount allowed(pieces)</th>
+        </tr>
+        <tr>
+            <td><a href="view_dresses_admin.html">Dresses</td>
+            <td>100</td>
+            <td>50</td>
+            
+        </tr>
+        <tr>
+            <td><a href="view_shirts_admin.html">Shirts</td>
+            <td>100</td>
+            <td>50</td>
+            
+        </tr>
+        <tr>
+            <td><a href="view_shoes_admin.html">Shoes</td>
+            <td>200</td>
+            <td>50</td>
+        </tr>
+    </table>
+    <div class="clearfix">
+        <button type="submit" class="Submit">
+            <a href="create_product.html">Create product</button>
+        <button type="button" class="modify">
+            <a href="modify_product.html">Modify a product</button>
+    </div>
+</body>
+
+</html>
