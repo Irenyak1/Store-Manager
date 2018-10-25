@@ -32,6 +32,7 @@ def login():
 @app.route('/api/v1/products', methods=['POST'])
 def create_a_product():
     """ Endpoint for the admin to create a product """
+    response = {'message': ''}
     if User.user_role == 'admin':
         product_data = request.get_json()
         # get product data
@@ -55,7 +56,7 @@ def create_a_product():
         result_create_a_product = new_product.create_a_product()
 
         if result_create_a_product:
-            return jsonify(result_create_a_product), 201
+            return jsonify({'message': 'Product succesfully created.'}), 201
 
     return jsonify({"message": "You have no rights to create a product"}), 400
 
