@@ -12,16 +12,16 @@ class BaseTestCase(unittest.TestCase):
         self.test_client = app.test_client()
         self.user_data = {
             "user_id": 1,
-            "name": "Jamie Jones",
-            "username": "sampthon",
+            "name": "Jamy Jones",
+            "username": "Irynah",
             "email": "sampthon@gmail.com",
-            "password": "kamukama2",
-            "confirmation": "kamukama2"
+            "password": "godly",
+            "confirmation": "godly"
 
         }
 
         self.user_login_data = {
-            "username": "Tinah",
+            "username": "nah",
             "password": "123456"
         }
 
