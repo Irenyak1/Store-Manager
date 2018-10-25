@@ -1,5 +1,5 @@
 # Store_Manager_API
-
+[![Build Status](https://travis-ci.com/Irenyak1/Store-Manager.svg?branch=challenge_2)](https://travis-ci.com/Irenyak1/Store-Manager)
 
 This API  allows admins to create accounts, login, create products and view all products and sales made by the store attendants. It also allows store attendants to login their accounts and view products available, make sale orders and view sale orders they have made. 
 
