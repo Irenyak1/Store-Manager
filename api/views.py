@@ -25,8 +25,8 @@ def login():
     login_result = user.login()
 
     if login_result:
-        return jsonify('Welcome {}'.format(login_result))
-    return jsonify('No such credentials found.')
+        return jsonify('Welcome {}'.format(login_result)), 200
+    return jsonify('No such credentials found.'), 400
 
 
 @app.route('/api/v1/products', methods=['POST'])
@@ -57,13 +57,13 @@ def create_a_product():
         if result_create_a_product:
             return jsonify(result_create_a_product), 201
 
-    return jsonify({"message": "You have no rights to create a product"})
+    return jsonify({"message": "You have no rights to create a product"}), 400
 
 
 @app.route('/api/v1/products', methods=['GET'])
 def get_all_products():
     """ Endpoint to get all products created by the admin """
-    return jsonify(Product.PRODUCTS), 201
+    return jsonify(Product.PRODUCTS), 200
 
 
 @app.route('/api/v1/products/<int:product_id>', methods=['GET'])
@@ -71,7 +71,7 @@ def get_a_product(product_id):
     """ Endpoint to fetch a single product """
     for product_list in Product.PRODUCTS:
         if product_list['product_id'] == product_id:
-            return jsonify(product_list)
+            return jsonify(product_list), 200
     return jsonify('There is no such product in the list'), 400
 
 
@@ -116,8 +116,8 @@ def create_a_sale():
 def get_all_sales():
     """ Endpoint for the admin to get all sale orders entered by the attendants """
     if User.user_role == 'admin':
-        return jsonify(Sale.SALES), 201
-    return jsonify({"message": "You have no rights to access sales"})
+        return jsonify(Sale.SALES), 200
+    return jsonify({"message": "You have no rights to access sales"}), 400
 
 
 @app.route('/api/v1/sales/<int:sale_id>', methods=['GET'])
@@ -125,5 +125,5 @@ def get_a_sale(sale_id):
     """ Endpoint to fetch a single sale order """
     for sale_list in Sale.SALES:
         if sale_list['sale_id'] == sale_id:
-            return jsonify(sale_list)
+            return jsonify(sale_list), 200
     return jsonify('There is no such sale order made'), 400
