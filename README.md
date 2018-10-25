@@ -1,5 +1,7 @@
 # Store_Manager_API
 [![Build Status](https://travis-ci.com/Irenyak1/Store-Manager.svg?branch=challenge_2)](https://travis-ci.com/Irenyak1/Store-Manager)
+[![Coverage Status](https://coveralls.io/repos/github/Irenyak1/Store-Manager/badge.svg?branch=challenge_2)](https://coveralls.io/github/Irenyak1/Store-Manager?branch=challenge_2)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cec49797ac7dd6ce3290/maintainability)](https://codeclimate.com/github/Irenyak1/Store-Manager/maintainability)
 
 This API  allows admins to create accounts, login, create products and view all products and sales made by the store attendants. It also allows store attendants to login their accounts and view products available, make sale orders and view sale orders they have made. 
 
