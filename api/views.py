@@ -26,13 +26,12 @@ def login():
 
     if login_result:
         return jsonify('Welcome {}'.format(login_result)), 200
-    return jsonify('No such credentials found.'), 400
+    return jsonify({'message': 'No such credentials found.'}), 400
 
 
 @app.route('/api/v1/products', methods=['POST'])
 def create_a_product():
     """ Endpoint for the admin to create a product """
-    response = {'message': ''}
     if User.user_role == 'admin':
         product_data = request.get_json()
         # get product data
@@ -58,7 +57,7 @@ def create_a_product():
         if result_create_a_product:
             return jsonify({'message': 'Product succesfully created.'}), 201
 
-    return jsonify({"message": "You have no rights to create a product"}), 400
+    return jsonify({'message': 'You have no rights to create a product'}), 400
 
 
 @app.route('/api/v1/products', methods=['GET'])
@@ -73,7 +72,7 @@ def get_a_product(product_id):
     for product_list in Product.PRODUCTS:
         if product_list['product_id'] == product_id:
             return jsonify(product_list), 200
-    return jsonify('There is no such product in the list'), 400
+    return jsonify({'message': 'There is no such product in the list.'}), 400
 
 
 @app.route('/api/v1/sales', methods=['POST'])
@@ -108,9 +107,9 @@ def create_a_sale():
         result_create_a_sale = new_sale.create_a_sale()
 
         if result_create_a_sale:
-            return jsonify(result_create_a_sale), 201
+            return jsonify({'message': 'Sale order created successfully.'}), 201
 
-        return jsonify({"message": "You have no rights to create a sale order"}), 400
+    return jsonify({'message': 'You have no rights to create a sale order.'}), 400
 
 
 @app.route('/api/v1/sales', methods=['GET'])
@@ -118,7 +117,7 @@ def get_all_sales():
     """ Endpoint for the admin to get all sale orders entered by the attendants """
     if User.user_role == 'admin':
         return jsonify(Sale.SALES), 200
-    return jsonify({"message": "You have no rights to access sales"}), 400
+    return jsonify({'message': 'You have no rights to access sales'}), 400
 
 
 @app.route('/api/v1/sales/<int:sale_id>', methods=['GET'])
@@ -127,4 +126,4 @@ def get_a_sale(sale_id):
     for sale_list in Sale.SALES:
         if sale_list['sale_id'] == sale_id:
             return jsonify(sale_list), 200
-    return jsonify('There is no such sale order made'), 400
+    return jsonify({'message': 'There is no such sale order made.'}), 400
