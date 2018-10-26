@@ -148,7 +148,7 @@ class ApiTestCase(unittest.TestCase):
             self.assertIn('Please attendant name is required',
                           responseJson['message'])
 
-    def test_if_product_name_is_empty(self):
+    def test_if_product_sales_name_is_empty(self):
         with self.test_client:
             User.user_role = 'attendant'
             response = self.test_client.post('/api/v1/sales', content_type='application/json',
@@ -161,7 +161,7 @@ class ApiTestCase(unittest.TestCase):
             self.assertIn('Please product name is required',
                           responseJson['message'])
 
-    def test_if_product_category_is_empty(self):
+    def test_if_product_sales_category_is_empty(self):
         with self.test_client:
             User.user_role = 'attendant'
             response = self.test_client.post('/api/v1/sales', content_type='application/json',
@@ -174,7 +174,7 @@ class ApiTestCase(unittest.TestCase):
             self.assertIn('Please fill in the product category',
                           responseJson['message'])
 
-    def test_if_product_price_is_empty(self):
+    def test_if_product_sales_price_is_empty(self):
         with self.test_client:
             User.user_role = 'attendant'
             response = self.test_client.post('/api/v1/sales', content_type='application/json',
