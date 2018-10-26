@@ -35,3 +35,10 @@ Run python app.py in vscode terminal
 * import Unittest
 * write tests
 * Run pytest on command prompt to see if the tests are passing. In case of any failure then refactor the code and be sure the tests run successfully
+
+## Deployment 
+* This App is hosted on [Heroku](https://the-store-manager.herokuapp.com/)
+
+
+## Author 
+Irene Nyakate
